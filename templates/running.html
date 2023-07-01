@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="{{url_for('static',filename='node_modules/bootstrap/dist/css/bootstrap.min.css')}}">
+        <script src="{{url_for('static',filename='node_modules/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
+        <style>
+            body{
+                width: 100vw;
+                height: 100vh;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Yes! the program is running, enjoy your music...🎵</h1>
+        <form action="/stop" method="POST">
+            <button type="submit" class="btn btn-primary">Stop</button>
+        </form>
+            
+    </body>
+</html>
