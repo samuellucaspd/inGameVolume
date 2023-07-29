@@ -57,4 +57,4 @@ def stop():
     stt.running = False
     return redirect('/')
 if __name__ == '__main__':
-    app.run()
+    webview.start()
