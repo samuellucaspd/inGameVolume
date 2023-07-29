@@ -43,7 +43,6 @@ def st():
 
 @app.route('/start_process',methods = ['GET'])
 def start_process():
-    print("acessado")
     global program
     global vol
     global time
